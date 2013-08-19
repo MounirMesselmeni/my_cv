@@ -1,2 +1,7 @@
 tmp
 *.log
+*.aux
+*.out
+*.gz
+*.pdf
+/tmp

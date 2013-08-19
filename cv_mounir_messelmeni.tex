@@ -1,3 +1,27 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.1 (9/12/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
 
@@ -8,8 +32,6 @@
 %Prevent LaTeX from breaking words and wrapping them to the next line
 \usepackage[none]{hyphenat}
 \usepackage[scale=0.75]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
 
 %----------------------------------------------------------------------------------------
 %	NAME AND CONTACT INFORMATION SECTION
@@ -20,15 +42,13 @@
 
 % All information in this block is optional, comment out any lines you don't need
 \title{Curriculum Vitae}
-\address{Street Mustapha Hjaij quoted El-Izdihar \\ apartment 37 building 5\\}{2080, Ariana, Tunisia}
+\address{Rue Mustapha Hjaij, cité El-Izdihar \\ Immeuble 5 appartement 37\\}{2080, Ariana, Tunisie}
 \mobile{(+216) 22487036}
-%\phone{(000) 111 1112}
-%\fax{(000) 111 1113}
 \email{messelmeni.mounir@gmail.com}
-%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
-\extrainfo{Born on 17/07/1987}
+\extrainfo{Né le 17/07/1987}
 \photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
-\quote{"The greatest pleasure in life is doing what people say you cannot do"}
+\quote{We must learn to live together as brothers or perish together as fools.
+“Martin Luther King, Jr“}
 
 %----------------------------------------------------------------------------------------
 
@@ -40,180 +60,123 @@
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Education}
+\section{Études et Formations}
 
-\cventry{January 2013}{Engineer diploma in Software Engineering}{National Institute of Applied Science and Technology}{INSAT}{Tunis}{honors}  % Arguments not required can be left empty
-\cventry{January 2010}{Admission in engineering cycle}{National Institute of Applied Science and Technology}{INSAT}{Tunis}{}  % Arguments not required can be left empty
-\cventry{June 2007}{Bachelor in technical section}{Hedi Chaker School}{}{Sfax}{honors}  % Arguments not required can be left empty
+\cventry{Janvier 2013}{Diplôme national d'ingénieur en Génie Logiciel}{Institut national des sciences appliquées et de la technologie}{INSAT}{Tunis}{Mention bien}  % Arguments not required can be left empty
+\cventry{Janvier 2010}{Admission au cycle d'ingénieur}{Institut national des sciences appliquées et de la technologie}{INSAT}{Tunis}{}  % Arguments not required can be left empty
+\cventry{Juin 2007}{Baccalauréat section technique}{Lycée Hédi Chaker}{}{Sfax}{Mention bien}  % Arguments not required can be left empty
 
-% \section{Masters Thesis}
-% 
-% \cvitem{Title}{\emph{Money Is The Root Of All Evil -- Or Is It?}}
-% \cvitem{Supervisors}{Professor James Smith \& Associate Professor Jane Smith}
-% \cvitem{Description}{This thesis explored the idea that money has been the cause of untold anguish and suffering in the world. I found that it has, in fact, not.}
 
 %----------------------------------------------------------------------------------------
 %	WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Professional experiences}
+\section{Expériences Professionnelles}
 
-\cventry{01/2013 Current}{Python/Django Engineer}{\textsc{3B Enterprise}}{Tunis}{}{ 
+\cventry{01/2013 Aujourd'hui}{Ingénieur Python/Django}{\textsc{Société
+3B}}{Tunis}{}{ 
 	\begin{itemize}
-	  \item Online recruitment site
+	  \item Site de recrutement en ligne
 	  		\begin{itemize}
-	  		  \item Installing a bugs management solution (Redmine) and processing client requests
-			  \item Development of back-office to manage candidates and accounts
-		      \item Achievement testing, performance tuning (SQL, Cache) and code review
-  		      \item Deployment of the solution on a production server (using GUnicorn and Nginx as Web server and 
-  		      deployment automation with Fabric)
+	  		  \item Installation d'une solution de gestion de bugs (Redmine) et traitement des
+					demandes du client
+			  \item Développement du back-office pour la gestion des candidats ainsi que
+		  			les comptes clients (Gestion des packs, comptes, blog, \ldots)
+		      \item Réalisation des tests, optimisation des performances et revue de code
+  		      \item Déploiement de la solution sur un serveur de production
+  		  			(GUnicorn, Supervisor, Nginx et automatisation du déploiment avec
+  		  			Fabric)
 			\end{itemize}
-	  \item TVAMS: TV audience
+	  \item TVAMS: Solution de calcul d'audience TV
 	  		\begin{itemize}
-	  		  \item Design and study of project architecture
-	  		  \item Developing a REST API for data collection and configuration of remote boxes (Update software versions, remote configuration)
-			  \item Development of a Back-end to manage data
-			  \item Using python librairies Pandas and Numpy to calculate statistics from data
+	  		  \item Conception et étude de l'architecture du projet
+	  		  \item Développemnt d'une API REST pour la communication avec les
+	  		  boîtiers(Mise à jour, fichiers de config)
+	  		  \item Développement d'une interface d'administration pour la gestion des
+					ménages, téléviseurs, membres
+	  		  \item Déploiement de la solution sur un serveur de production
+  		  			(GUnicorn, Supervisor, Nginx et automatisation du déploiment avec
+  		  			Fabric)
 			 \end{itemize} 
 	\end{itemize}
 }
 
-\cventry{09/2012 01/2013}{Graduation internship}{\textsc{3B Enterprise}}{Tunis}{}{
-Specification, design and development of a platform for online recruitment
+\cventry{09/2012 01/2013}{Stage de fin d'études}{\textsc{Société 3B}}{Tunis}{}{
+Spécification, conception et développement d'une plateforme de recrutement en ligne
 \begin{itemize}
-\item Writing the specification and requirements gathering
-\item Design and implementation of functionalities using the Django web framework
+\item Rédaction de la spécification et collecte des besoins
+\item Conception de la solution
+\item Implémentation des fonctionnalitées en utilisant le framework web Django
 \end{itemize}}
 
-\cventry{05/2012 06/2012}{Year-end Project}{\textsc{INSAT}}{Tunis}{}{
-Development of a mini CRM using the following tools and frameworks : \\ JEE6, JBoss Seam Framework 3, CDI (Context and Dependency Injection), Maven,
-Glassfish, JSF 2, PrettyFaces, JPA/Hibernate, Primefaces et GIT
+\cventry{05/2012 06/2012}{Projet de fin d'année}{\textsc{INSAT}}{Tunis}{}{
+Développement d’un mini CRM avec utilisation des outils et frameworks suivants : \\ JEE6, Seam3, CDI, Maven,
+Glassfish, JSF2, JPA/Hibernate, Primefaces et GIT
 }
 
 %------------------------------------------------
 
-\cventry{08/2011 08/2012}{JEE developer}{\textit{Student job}, \textsc{3B Enterprise}}{Tunis}{}{
+\cventry{08/2011 08/2012}{Développeur JEE}{\textit{Travail étudiant}, \textsc{Société 3B}}{Tunis}{}{
 \begin{itemize}
-  \item Study the need for traffic census in Tunisia in 2012 developing a web module for data entry for the Ministry of Infrastructure.
-  \item Development of a web application for viewing real-time statistics of the television audience in Tunisia. The reading of data is done via a SOAP web service development of a SOAP client in Java using Axis2. 
+  \item Étude du besoin pour le recensement de la circulation en Tunisie pour l'année 2012 et 
+  		développement d’un module web pour la saisie de données pour la ministère de
+  l’équipement.
+  \item Développement d’une application web permettant la visualisation temps réel des statistiques
+de l’audience télévisuelle en Tunisie. La lecture des données se fait via un web service SOAP,
+développement d’un client SOAP en Java en utilisant Axis2. 
 \end{itemize}
 }
-% \cventry{07/2010 09/2010}{Summer Internship: Java Developer}{\textsc{SEI}}{Sfax}{}{
-% Réalisation d’une interface OpenGL avec Java en utilisant la librairie JOGL. L’interface permet
-% la lecture d’un flux radio OGG à partir d’Internet lorsque l’utilisateur sélectionne une station
-% donnée.
-% }
 
-%------------------------------------------------
-
-% \subsection{Miscellaneous}
-% 
-% \cventry{2008--2009}{Computer Repair Specialist}{Buy More}{Burbank}{}{Worked in the Nerd Herd and helped to solve computer problems by asking customers to turn their computers off and on again.}
-
-%----------------------------------------------------------------------------------------
-%	AWARDS SECTION
-%----------------------------------------------------------------------------------------
-
-% \section{Awards}
-% 
-% \cvitem{2011}{School of Business Postgraduate Scholarship}
-% \cvitem{2010}{Top Achiever Award -- Commerce}
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{Skills}
+\section{Qualifications}
 
 \cvitem{IDE}{Eclipse, NetBeans, Microsoft Visual Studio 2010, Sublime Text 2}
-\cvitem{Languages}{C/C++, C\#, Java, Python, HTML, Javascript, CSS, Latex}
+\cvitem{Language}{Java, Python, HTML, Javascript, CSS, Latex}
 \cvitem{SCM}{GIT}
-\cvitem{Testing tools}{JUnit, TestNG, JBoss Arquillian, Selenuim, Django unit test (Test Client, LiveServerTestCase)}
 \cvitem{Frameworks}{
 \begin{itemize}
-  \item Java/JEE (Advanced knowledge) : Swing/Awt, JSF 2, PrimeFaces,
+  \item Java/JEE (Connaissance avancée) : Swing/Awt, JSF 2, PrimeFaces,
   RichFaces, JPA (Hibernate, EclipseLink), EJB 3, JMS, RMI, CDI, JBoss Seam 3 (Security, Persistence, Mail, Faces, Solder, Transaction), Maven
-  \item .Net (Basic knowledge): MS Forms, WPF, ADO.Net, LINQ, Entity
-  Framework, ASP.NET MVC 2
-  \item Python/Django (Advanced knowledge): Customizing the admin interface, Unit Test, Selenuim, 
-  Celery, Tastypie(REST API)
-  \item Javascript: jQuery, AngularJS, Knockout
+  \item Python/Django (Connaissance avancée): Personnalisation de l'interface
+  d'admin, Test unitaire, Selenuim, Celery (Pour les taches asynchrones et les taches planifiées),
+  Tastypie(REST API), social auth, SES backend, S3 Storage, Fabric
+  \item Javascript (Connaissance avancée): jQuery, AngularJS, Knockout, Backbone
   \item CSS: Bootstrap from Twitter
 \end{itemize}
 }
-\cvitem{Application and web servers}{Glassfish, JBoss AS, Apache, Apache
-Tomcat, Nginx, GUnicorn}
-%\cvitem{OS}{Windows (XP, Seven), Linux Fedora (Installation, network, users and services administration)}
-\cvitem{Database}{Microsoft SQL 2008, MySQL, Postgresql, Oracle 10G}
+\cvitem{Cloud}{Amazon AWS, S3, SES}
+\cvitem{Serveur d'application}{Glassfish, JBoss AS, Apache, Apache Tomcat,
+Gunicorn, Nginx}
+\cvitem{Base de données}{Microsoft SQL 2008, MySQL, Postgresql, Oracle 10G}
 \cvitem{Format}{XML, YAML, JSON}
 
-%----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-% \section{Communication Skills}
-% 
-% \cvitem{2010}{Oral Presentation at the California Business Conference}
-% \cvitem{2009}{Poster at the Annual Business Conference in Oregon}
 
 %----------------------------------------------------------------------------------------
 %	LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Languages}
+\section{Langues}
 
-\cvitemwithcomment{English}{advanced}{}
-\cvitemwithcomment{French}{bilingual}{}
-\cvitemwithcomment{Arabic}{native}{}
+\cvitemwithcomment{Français}{courant}{}
+\cvitemwithcomment{Anglais}{opérationnel}{}
+\cvitemwithcomment{Arabe}{maternelle}{}
 
 %----------------------------------------------------------------------------------------
 %	INTERESTS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Interests}
+\section{Intêrets}
 
 \renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
 
-\cvlistdoubleitem{Movies}{Video games}
+\cvlistdoubleitem{Films}{Jeux vidéos}
 
-%----------------------------------------------------------------------------------------
-%	COVER LETTER
-%----------------------------------------------------------------------------------------
+\href{https://github.com/MounirMesselmeni}{\includegraphics[width=1cm,height=1cm]{pictures/github.png}
+Compte Github}
+\url{https://github.com/MounirMesselmeni}
 
-% To remove the cover letter, comment out this entire block
+\href{https://bitbucket.org/MounirMesselmeni}{\includegraphics[width=1cm,height=1cm]{pictures/bitbucket.png}
+Compte Bitbucket}
+\url{https://bitbucket.org/MounirMesselmeni}
 
-%  \clearpage
-% % 
-%  \recipient{A l'attention du \textbf{directeur des ressources humaines}}{} % Letter recipient
-%  \date{23 Janvier 2013} % Letter date
-%  \opening{Monsieur,} % Opening greeting
-%  \closing{Sincerely yours,} % Closing phrase
-%  \enclosure[Pièce jointe]{curriculum vit\ae{}} % List of enclosed documents
-% % 
-%  \makelettertitle % Print letter title
-% % 
-% % \lipsum[1-3] % Dummy text
-% L'expérience  et  le  renom  de  votre  entreprise  sur  les  marchés  me  conduisent  à  vous proposer  mes
-% compétences. Très désireux de participer à de nouveaux défis, je souhaiterai mettre à profit en intégrant votre équipe de développement.
-% 
-% Grâce à ma formation, j’ai pu acquérir des compétences dans les domaines de la programmation objet,
-% des  design  pattern,  le développement  des applications web RIA avec les Framework JavaEE, Django/Python, CSS, HTML et Javascript, compétences que je souhaiterais
-% mettre en pratique au sein d’une entreprise spécialisée comme la vôtre.
-% 
-% Mon entourage apprécie mes facultés d’analyse, ma curiosité intellectuelle et mon esprit pratique.
-% 
-% Enfin,  je  suis  à  votre  disposition  pour  vous  rencontrer  selon  les  modalités  que  vous voudrez  bien
-% m’indiquer.
-% 
-% Dans l'attente d'un prochain entretien, je vous prie de croire à l'assurance de mes salutations les plus
-% respectueuses.
-% 
-% \vspace{20 mm}
-% \hspace{120mm}
-% \textbf{Mounir Messelmeni}
-% 
- %\makeletterclosing % Print letter signature
-
-%----------------------------------------------------------------------------------------
 
 \end{document}

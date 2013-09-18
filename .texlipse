@@ -1,5 +1,5 @@
 #TeXlipse project settings
-#Mon Aug 19 14:30:56 CET 2013
+#Wed Sep 18 14:53:27 CET 2013
 markTmpDer=true
 builderNum=2
 outputDir=
@@ -7,7 +7,7 @@ makeIndSty=
 bibrefDir=
 outputFormat=pdf
 tempDir=tmp
-mainTexFile=cv_mounir_messelmeni.tex
+mainTexFile=cv_mounir_en.tex
 outputFile=cv_mounir_messelmeni.pdf
 langSpell=en
 markDer=true
